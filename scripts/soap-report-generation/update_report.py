@@ -142,7 +142,7 @@ def main():
     sys.exit(1)
 
   # Use relative path
-  tmp_dir = Path(__file__).parent.parent / "tmp"
+  tmp_dir = Path(__file__).parent.parent.parent / "tmp"
 
   old_date_file = old_date.replace('-', '_')
   new_date_file = new_date.replace('-', '_')
