@@ -32,7 +32,7 @@ Execute these steps in order:
    `$HOME/OneDrive - Accenture/Documents/PROJECTS/AVANADE/delivery reports/`
    into `$HOME/REPOS/repo-agents/tmp` folder
 2. Run `cd $HOME/REPOS/repo-agents/tmp && pandoc summary.md -o summary.docx`
-3. Execute `scripts/update_report.py` with <old_tag_date> and <new_tag_date> as arguments
+3. Execute `scripts/soap-report-generation/update_report.py` with <old_tag_date> and <new_tag_date> as arguments
 4. Copy new document to `$HOME/OneDrive - Accenture/Documents/PROJECTS/AVANADE/delivery reports/`
 5. Delete `tmp` directory and its contents
 6. Report the orchestrator you're done

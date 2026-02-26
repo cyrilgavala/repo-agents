@@ -21,7 +21,7 @@ Execute these steps in order:
 1. Parse `old_tag` and `new_tag` from the prompt. They are positional: first tag mentioned is old,
    second is new. Check they are in format "yyyy/mm/delivery-yyyy-mm-dd"
    If either tag is missing, respond: "Error: both old_tag and new_tag are required." and stop.
-2. Execute the `scripts/collect-diff.sh` script with the parsed tags as arguments. If the script
+2. Execute the `scripts/soap-report-generation/collect-diff.sh` script with the parsed tags as arguments. If the script
    fails, report: "Error: failed to execute collect-diff.sh - {error_message}" and stop
 3. Report the orchestrator you're done
 
