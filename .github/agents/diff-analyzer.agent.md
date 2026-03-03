@@ -1,9 +1,9 @@
 ---
 name: diff-analyzer
-description: >-
-  Reads collected_diff.patch and produces a structured code review analysis in
-  analysis.md
-tools: [ create_file, read_file, run_in_terminal, get_terminal_output ]
+description: '>-'
+Reads collected_diff.patch and produces a structured code review analysis in: 'analysis.md'
+tools: [ 'create_file', 'read_file', 'run_in_terminal', 'get_terminal_output' ]
+model: Claude Sonnet 4.6 (copilot)
 ---
 
 # Agent Patch Analysis
@@ -24,9 +24,7 @@ Execute these steps in order:
 
 ## Output Format
 
-# Patch Analysis
-
-## Stats
+### Stats
 
 | Metric          | Value    |
 |-----------------|----------|
@@ -34,7 +32,7 @@ Execute these steps in order:
 | Total additions | {+lines} |
 | Total deletions | {-lines} |
 
-## Changed Files
+### Changed Files
 
 | Status   | File     | +Lines | -Lines |
 |----------|----------|--------|--------|
@@ -42,9 +40,10 @@ Execute these steps in order:
 
 ---
 
-## Summary
+### Summary
 
-One paragraph. What this change actually does.
+Group changes by relevant feature or module. For each group, provide a concise summary of the
+change, its purpose, and any potential implications or risks.
 
 ## Rules
 

@@ -2,6 +2,7 @@
 name: report-generator
 description: Orchestrates diff-collector, diff-analyzer, diff-summarizer, and report-updater in sequence to produce a complete delivery report
 tools: [ run_subagent ]
+model: Claude Haiku 4.5 (copilot)
 ---
 
 # Agent: report-generator

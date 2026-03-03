@@ -4,6 +4,7 @@ description: >-
   Updates the Word delivery report by copying it with a new date name and
   replacing the Summary section with content from summary.md
 tools: [ 'create_file', 'read_file', 'run_in_terminal', 'get_terminal_output' ]
+model: Claude Haiku 4.5 (copilot)
 ---
 
 # Agent Report Updater
@@ -32,7 +33,8 @@ Execute these steps in order:
    `$HOME/OneDrive - Accenture/Documents/PROJECTS/AVANADE/delivery reports/`
    into `$HOME/REPOS/repo-agents/tmp` folder
 2. Run `cd $HOME/REPOS/repo-agents/tmp && pandoc summary.md -o summary.docx`
-3. Execute `scripts/soap-report-generation/update_report.py` with <old_tag_date> and <new_tag_date> as arguments
+3. Execute `scripts/soap-report-generation/update_report.py` with <old_tag_date> and <new_tag_date>
+   as arguments
 4. Copy new document to `$HOME/OneDrive - Accenture/Documents/PROJECTS/AVANADE/delivery reports/`
 5. Delete `tmp` directory and its contents
 6. Report the orchestrator you're done
@@ -48,3 +50,4 @@ Execute these steps in order:
 - Don't verify the output.
 - Terminal commands run without any verification or validation — if a command fails, report the
   error and stop immediately.
+- Don't forget to always clean up the `tmp` directory at the end.
