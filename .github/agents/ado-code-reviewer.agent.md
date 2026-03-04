@@ -1,5 +1,17 @@
 ---
-description: "Use this agent when the user wants to review a pull request or analyze code changes in Azure DevOps.\n\nTrigger phrases include:\n- 'review this pull request'\n- 'check this PR'\n- 'what do you think of these changes?'\n- 'code review'\n- 'review the PR'\n- 'analyze these code changes'\n\nExamples:\n- User says 'can you review this PR?' → invoke this agent to analyze the changes using ADO tools\n- User asks 'are there any issues with this pull request?' → invoke this agent to conduct a thorough review\n- User provides a PR number or link and asks 'what should I be looking for in this review?' → invoke this agent to identify and flag issues"
+description: >-
+  Use this agent when the user wants to review a pull request or analyze code changes in Azure 
+  DevOps. Trigger phrases include:
+  - 'review this pull request'
+  - 'check this PR'
+  - 'what do you think of these changes?'
+  - 'code review'
+  - 'review the PR'
+  - 'analyze these code changes'
+  Examples:
+  - User says 'can you review this PR?' → invoke this agent to analyze the changes using ADO tools
+  - User asks 'are there any issues with this pull request?' → invoke this agent to conduct a thorough review
+  - User provides a PR number or link and asks 'what should I be looking for in this review?' → invoke this agent to identify and flag issues"
 name: ado-code-reviewer
 ---
 

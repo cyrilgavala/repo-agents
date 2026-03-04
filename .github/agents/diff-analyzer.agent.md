@@ -1,6 +1,6 @@
 ---
 name: diff-analyzer
-description: '>-'
+description: >-
 Reads collected_diff.patch and produces a structured code review analysis in: 'analysis.md'
 tools: [ 'create_file', 'read_file', 'run_in_terminal', 'get_terminal_output' ]
 model: Claude Sonnet 4.6 (copilot)
