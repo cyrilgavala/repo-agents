@@ -10,5 +10,5 @@ OUTPUT_FILE="$HOME/REPOS/repo-agents/tmp/collected_diff.patch"
 mkdir -p "$(dirname "$OUTPUT_FILE")"
 cd "$REPO"
 git fetch --tags --force
-git diff "$TAG1".."$TAG2" -- apps/wave2/soap -- apps/wave2/amt > "$OUTPUT_FILE"
+git diff "$TAG1".."$TAG2" -- apps/wave2/amt apps/wave2/soap > "$OUTPUT_FILE"
 echo "Diff saved to $OUTPUT_FILE"
