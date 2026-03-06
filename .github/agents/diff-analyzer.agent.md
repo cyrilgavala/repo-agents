@@ -1,7 +1,7 @@
 ---
 name: diff-analyzer
 description: >-
-Reads collected_diff.patch and produces a structured code review analysis in: 'analysis.md'
+    Reads collected_diff.patch and produces a structured code review analysis in: 'analysis.md'
 tools: [ 'create_file', 'read_file', 'run_in_terminal', 'get_terminal_output' ]
 model: Claude Sonnet 4.6 (copilot)
 ---
@@ -49,7 +49,5 @@ change, its purpose, and any potential implications or risks.
 
 - Never skip a section.
 - Always cite file path and line numbers.
-- Flag any PAN/card data handling issues as HIGH RISK.
 - Be specific. "This is fine" is not acceptable output.
 - Never skip a step.
-- Don't verify the output.

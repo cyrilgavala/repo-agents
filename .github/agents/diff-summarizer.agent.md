@@ -1,7 +1,8 @@
 ---
 name: diff-summarizer
-description: Reads analysis.md and produces an executive-level bullet-point summary in summary.md
-tools: [ create_file, read_file, run_in_terminal, get_terminal_output ]
+description: >- 
+  Reads analysis.md and produces an executive-level bullet-point summary in summary.md
+tools: [ 'create_file', 'read_file', 'run_in_terminal', 'get_terminal_output' ]
 model: Claude Sonnet 4.6 (copilot)
 ---
 
@@ -40,6 +41,5 @@ Bullet-point list of the most important changes. Focus on what changed and why, 
 - Be specific about the impact of changes — e.g., "This change adds a new API endpoint for
   retrieving user profiles, which will allow the mobile app to display richer user information."
   rather than "This change modifies the user profile functionality."
-- Don't verify the output.
-- Be concise, even sacrife grammar and style for brevity when necessary — the goal is to produce a
+- Be concise, even sacrifice grammar and style for brevity when necessary — the goal is to produce a
   summary that can be read in under 30 seconds.

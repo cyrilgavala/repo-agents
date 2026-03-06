@@ -67,10 +67,5 @@ influence, or personal integrity. Call me out when I’m standing still. And cal
 ## What this repo is
 
 A collection of GitHub Copilot agent workflows. Each workflow is self-contained: one orchestrator
-agent coordinates a set of specialised subagents and supporting scripts. Adding a new workflow does
+agent coordinates a set of specialized subagents and supporting scripts. Adding a new workflow does
 not touch anything existing.
-
-## Key conventions
-
-- Orchestrators are pure delegators — no analysis, no commentary, no added logic.
-- Subagents are deterministic executors — numbered steps, fail-fast, no skipping.

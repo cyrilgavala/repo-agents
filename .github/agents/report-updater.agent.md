@@ -17,10 +17,8 @@ stop immediately.
 
 ## Input
 
-User will provide:
-
-- old_tag (e.g., "2026/02/delivery-2026-02-15")
-- new_tag (e.g., "2026/02/delivery-2026-02-23")
+Orchestrator agent will provide <new_tag> and <old_tag> (e.g., "2026/02/delivery-2026-02-15" and
+"2026/02/delivery-2026-02-23") for use in file naming.
 
 Extract <new_tag_date> and <old_tag_date> from the tag names (e.g., "2026_02_15" and "2026_02_23")
 for use in file naming.
@@ -41,13 +39,11 @@ Execute these steps in order:
 
 ## Rules
 
-- Old and new tag dates must be parsed from tag names in format: `yyyy/mm/delivery-yyyy-mm-dd`
 - Fail if source document does not exist
 - Fail if summary.md does not exist
 - Fail if update_report.py script fails for any reason (e.g., exit code not 0, exceptions thrown)
 - Do not proceed to any step if the previous step failed
 - Be precise in error reporting — specify exactly what went wrong
-- Don't verify the output.
 - Terminal commands run without any verification or validation — if a command fails, report the
   error and stop immediately.
 - Don't forget to always clean up the `tmp` directory at the end.
